@@ -31,13 +31,16 @@
             this.menuStripMain = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitFileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.connectQueriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.queriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStripMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStripMain
             // 
             this.menuStripMain.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.queriesToolStripMenuItem});
             this.menuStripMain.Location = new System.Drawing.Point(0, 0);
             this.menuStripMain.Name = "menuStripMain";
             this.menuStripMain.Size = new System.Drawing.Size(284, 24);
@@ -57,6 +60,21 @@
             this.exitFileToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitFileToolStripMenuItem.Text = "&Salir";
             this.exitFileToolStripMenuItem.Click += new System.EventHandler(this.exitFileToolStripMenuItem_Click);
+            // 
+            // connectQueriesToolStripMenuItem
+            // 
+            this.connectQueriesToolStripMenuItem.Name = "connectQueriesToolStripMenuItem";
+            this.connectQueriesToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.connectQueriesToolStripMenuItem.Text = "C&onectar...";
+            this.connectQueriesToolStripMenuItem.Click += new System.EventHandler(this.connectQueriesToolStripMenuItem_Click);
+            // 
+            // queriesToolStripMenuItem
+            // 
+            this.queriesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.connectQueriesToolStripMenuItem});
+            this.queriesToolStripMenuItem.Name = "queriesToolStripMenuItem";
+            this.queriesToolStripMenuItem.Size = new System.Drawing.Size(71, 20);
+            this.queriesToolStripMenuItem.Text = "&Consultas";
             // 
             // MainForm
             // 
@@ -80,6 +98,8 @@
         private System.Windows.Forms.MenuStrip menuStripMain;
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitFileToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem queriesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem connectQueriesToolStripMenuItem;
     }
 }
 

@@ -14,5 +14,12 @@ namespace CamaleonDataStudio
         {
             this.Close();
         }
+
+        private void connectQueriesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var queryForm = new QueryForm();
+            queryForm.MdiParent = this;
+            queryForm.Show();
+        }
     }
 }
