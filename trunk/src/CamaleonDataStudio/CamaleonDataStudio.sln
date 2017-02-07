@@ -5,6 +5,10 @@ VisualStudioVersion = 12.0.40629.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CamaleonDataStudio", "CamaleonDataStudio\CamaleonDataStudio.csproj", "{51642977-5084-4369-8D9E-623C5335E02A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdabasSqlGatewayCamaleonDataStudio", "AdabasSqlGatewayCamaleonDataStudio\AdabasSqlGatewayCamaleonDataStudio.csproj", "{65163321-51FE-4AF8-B60D-A019054FB32B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectionCamaleonDataStudio", "ConnectionCamaleonDataStudio\ConnectionCamaleonDataStudio.csproj", "{67AA36FC-12A4-4005-8D56-3045F184B106}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{51642977-5084-4369-8D9E-623C5335E02A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51642977-5084-4369-8D9E-623C5335E02A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51642977-5084-4369-8D9E-623C5335E02A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65163321-51FE-4AF8-B60D-A019054FB32B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65163321-51FE-4AF8-B60D-A019054FB32B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65163321-51FE-4AF8-B60D-A019054FB32B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65163321-51FE-4AF8-B60D-A019054FB32B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67AA36FC-12A4-4005-8D56-3045F184B106}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67AA36FC-12A4-4005-8D56-3045F184B106}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67AA36FC-12A4-4005-8D56-3045F184B106}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67AA36FC-12A4-4005-8D56-3045F184B106}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

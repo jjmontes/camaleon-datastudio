@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using ConnectionCamaleonDataStudio;
+using System.Windows.Forms;
 
 namespace CamaleonDataStudio
 {
@@ -9,6 +10,6 @@ namespace CamaleonDataStudio
             InitializeComponent();
         }
 
-        public string ConnectionString { get; set; }
+        public IConnection Connection { get; set; }
     }
 }

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.ConnectTypeLabel = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.ConnectType = new System.Windows.Forms.ComboBox();
             this.Connect = new System.Windows.Forms.Button();
             this.ConnectionStringLabel = new System.Windows.Forms.Label();
             this.ConnectionString = new System.Windows.Forms.TextBox();
@@ -44,13 +44,13 @@
             this.ConnectTypeLabel.TabIndex = 0;
             this.ConnectTypeLabel.Text = "Tipo de conexión";
             // 
-            // comboBox1
+            // ConnectType
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(108, 10);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(304, 21);
-            this.comboBox1.TabIndex = 1;
+            this.ConnectType.FormattingEnabled = true;
+            this.ConnectType.Location = new System.Drawing.Point(108, 10);
+            this.ConnectType.Name = "ConnectType";
+            this.ConnectType.Size = new System.Drawing.Size(304, 21);
+            this.ConnectType.TabIndex = 1;
             // 
             // Connect
             // 
@@ -86,13 +86,14 @@
             this.Controls.Add(this.ConnectionString);
             this.Controls.Add(this.ConnectionStringLabel);
             this.Controls.Add(this.Connect);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.ConnectType);
             this.Controls.Add(this.ConnectTypeLabel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "ConnectForm";
             this.Text = "Conexión";
+            this.Load += new System.EventHandler(this.ConnectForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,7 +102,7 @@
         #endregion
 
         private System.Windows.Forms.Label ConnectTypeLabel;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox ConnectType;
         private System.Windows.Forms.Button Connect;
         private System.Windows.Forms.Label ConnectionStringLabel;
         private System.Windows.Forms.TextBox ConnectionString;
