@@ -96,6 +96,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CamaleonPluginManager\CamaleonPluginManager.csproj">
+      <Project>{8eec2f5d-119d-4704-8bc7-6f1adab62389}</Project>
+      <Name>CamaleonPluginManager</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ConnectionCamaleonDataStudio\ConnectionCamaleonDataStudio.csproj">
       <Project>{67aa36fc-12a4-4005-8d56-3045f184b106}</Project>
       <Name>ConnectionCamaleonDataStudio</Name>
