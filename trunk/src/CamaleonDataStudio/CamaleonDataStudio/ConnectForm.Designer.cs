@@ -46,14 +46,17 @@
             // 
             // ConnectType
             // 
+            this.ConnectType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
             this.ConnectType.FormattingEnabled = true;
             this.ConnectType.Location = new System.Drawing.Point(108, 10);
             this.ConnectType.Name = "ConnectType";
             this.ConnectType.Size = new System.Drawing.Size(304, 21);
             this.ConnectType.TabIndex = 1;
+            this.ConnectType.SelectedIndexChanged += new System.EventHandler(this.ConnectType_SelectedIndexChanged);
             // 
             // Connect
             // 
+            this.Connect.Enabled = false;
             this.Connect.Location = new System.Drawing.Point(337, 81);
             this.Connect.Name = "Connect";
             this.Connect.Size = new System.Drawing.Size(75, 23);

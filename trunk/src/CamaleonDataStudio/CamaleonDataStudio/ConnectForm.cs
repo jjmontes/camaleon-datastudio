@@ -19,6 +19,7 @@ namespace CamaleonDataStudio
 
         private void Connect_Click(object sender, EventArgs e)
         {
+            if (ConnectType.SelectedItem == null) return;
             IConnection connection = null;
 
             var queryForm = new QueryForm();
@@ -26,6 +27,11 @@ namespace CamaleonDataStudio
             queryForm.Connection = connection;
             queryForm.Show();
             Close();
+        }
+
+        private void ConnectType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Connect.Enabled = ConnectType.SelectedItem != null;
         }
 
     }
