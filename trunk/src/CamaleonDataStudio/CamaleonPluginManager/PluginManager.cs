@@ -19,11 +19,11 @@ namespace CamaleonPluginManager
   
         public static PluginManager Instance { get { return _lazy.Value; } }
 
-        public string[] Plugins 
+        public Plugin[] Plugins 
         { 
             get 
             {
-                var plugins = new List<string>();
+                var plugins = new List<Plugin>();
                 var files = new List<string>();
                 GetFilesInFolder(files, _pluginFolder, "Plugin.xml");
                 GetPluginsName(plugins, files);
@@ -45,20 +45,11 @@ namespace CamaleonPluginManager
             }
         }
 
-        private void GetPluginsName(List<string> plugins, IEnumerable<string> files)
+        private void GetPluginsName(List<Plugin> plugins, IEnumerable<string> files)
         {
-            const string tagNameStart = "<name>";
-            const string tagNameEnd = "</name>";
-
             foreach (var file in files)
             {
-                var xml = File.ReadAllText(file);
-                var start = xml.IndexOf(tagNameStart, StringComparison.InvariantCultureIgnoreCase);
-                if (start == -1) continue;
-                start += tagNameStart.Length;
-                
-                var end = xml.IndexOf(tagNameEnd, start, StringComparison.InvariantCultureIgnoreCase);
-                plugins.Add(xml.Substring(start, end - start));
+                plugins.Add(new Plugin(file));
             }
         }
     }
