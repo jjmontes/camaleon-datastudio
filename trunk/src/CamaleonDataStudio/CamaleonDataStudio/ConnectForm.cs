@@ -1,5 +1,4 @@
 ﻿using CamaleonPluginManager;
-using ConnectionCamaleonDataStudio;
 using System;
 using System.Windows.Forms;
 
@@ -20,11 +19,12 @@ namespace CamaleonDataStudio
         private void Connect_Click(object sender, EventArgs e)
         {
             if (ConnectType.SelectedItem == null) return;
-            IConnection connection = null;
+            var plugin = ConnectType.SelectedItem as Plugin;
+            if (plugin == null) MessageBox.Show(string.Format("Error: No se puede determinar el plugin de conexión '{0}'", ConnectType.SelectedText));
 
             var queryForm = new QueryForm();
             queryForm.MdiParent = MdiParent;
-            queryForm.Connection = connection;
+            queryForm.Connection = plugin.Load();
             queryForm.Show();
             Close();
         }
