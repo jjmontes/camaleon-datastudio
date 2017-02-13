@@ -44,6 +44,12 @@
     <Compile Include="PluginManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConnectionCamaleonDataStudio\ConnectionCamaleonDataStudio.csproj">
+      <Project>{67aa36fc-12a4-4005-8d56-3045f184b106}</Project>
+      <Name>ConnectionCamaleonDataStudio</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
